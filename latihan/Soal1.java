@@ -1,5 +1,7 @@
 package latihan;
 
+import java.util.Scanner;
+
 public class Soal1 {
     /**
      * Buatlah sebuah program yang mencari nilai maksimum dari 2 bilangan
@@ -7,14 +9,19 @@ public class Soal1 {
      */
 
     public static void main(String[] args) {
-        int num1 = 10;
-        int num2 = 20;
+        int[] bilagan = new int[2];
+                Scanner input = new Scanner(System.in);
 
-        int max = findMax(num1, num2);
-        System.out.println("Nilai maksimum adalah: + max");
-    }
-    public static int findMax (int a, int b) {
-        return (a > b) ? a: b;
+        System.out.println("Masukan Bilangan Pertama : ");
+        bilagan[0] = input.nextInt();
 
+        System.out.println("Masukan Bilangan Kedua : ");
+        bilagan[1] = input.nextByte();
+
+                if (bilagan [1] > bilagan[0]) {
+                    System.out.println(bilagan[1]);
+                }else {
+                    System.out.println(bilagan[0]);
+                }
+                }
     }
-}
